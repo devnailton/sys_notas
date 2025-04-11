@@ -1,0 +1,59 @@
+/* Estilo geral da seção */
+.about-us-section {
+    padding: 50px 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+  }
+  
+  .about-us-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    gap: 20px; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinha verticalmente os itens */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+  }
+  
+  /* Estilo do texto */
+  .about-us-text {
+    flex: 1; /* O texto ocupa o espaço disponível */
+    min-width: 300px; /* Largura mínima para o texto */
+  }
+  
+  .about-us-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-us-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo da imagem */
+  .about-us-image {
+    flex: 1; /* A imagem ocupa o espaço disponível */
+    min-width: 300px; /* Largura mínima para a imagem */
+    text-align: center; /* Centraliza a imagem em telas menores */
+  }
+  
+  .about-us-image img {
+    max-width: 100%; /* A imagem não ultrapassa o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column; /* Empilha os elementos em telas menores */
+    }
+  
+    .about-us-text,
+    .about-us-image {
+      text-align: center; /* Centraliza o texto e a imagem */
+    }
+  }

@@ -1,20 +1,25 @@
+// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Carousel from "./Carousel";
-import Login from "./pages/Login";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Carousel from "./components/Carousel";
+import AboutUs from "./components/AboutUs";
+import Login from "../src/pages/Login";
 
-const Home = () => (
-  <div style={{ paddingBottom: '60px' }}> {/* Espaço para o footer */}
-    <Carousel />
-  </div>
-);
+const Home = () => {
+  return (
+    <div>
+      <Carousel />
+      <AboutUs />
+    </div>
+  );
+};
 
 const App = () => {
   return (
     <Router>
-      <div style={{ minHeight: '100vh', position: 'relative' }}>
+      <div style={{ minHeight: "100vh", position: "relative" }}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
