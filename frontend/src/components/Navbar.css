@@ -1,0 +1,124 @@
+/* Navbar principal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Menu Desktop */
+  .navbar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-desktop button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .navbar-desktop button:hover {
+    color: #28a745;
+  }
+  
+  .login-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Botão Hamburguer */
+  .hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  /* Menu Mobile */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    padding: 60px 20px 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .mobile-menu.open {
+    right: 0;
+  }
+  
+  .mobile-menu button,
+  .mobile-menu a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .mobile-menu button:hover,
+  .mobile-menu a:hover {
+    background-color: #444;
+  }
+  
+  /* Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .navbar-desktop {
+      display: none;
+    }
+  
+    .hamburger-button {
+      display: block;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }

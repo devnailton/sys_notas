@@ -1,20 +1,9 @@
-// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
-import AboutUs from "./components/AboutUs";
-import Login from "../src/pages/Login";
-
-const Home = () => {
-  return (
-    <div>
-      <Carousel />
-      <AboutUs />
-    </div>
-  );
-};
+import Home from "./pages/Home"; // Importando o Home de pages
+import Login from "./pages/Login";
 
 const App = () => {
   return (

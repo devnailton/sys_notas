@@ -14,7 +14,7 @@ const Footer = () => {
         left: 0
       }}
     >
-      <p>© 2025 Sistema de Notas. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Apey Sistemas. Todos os direitos reservados..</p>
     </footer>
   );
 };

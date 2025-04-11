@@ -1,0 +1,80 @@
+/* Estilo geral da seção */
+.products-section {
+  padding: 50px 20px; /* Espaçamento interno */
+  margin: 0 auto; /* Centraliza a seção */
+  max-width: 1200px; /* Define uma largura máxima */
+  background-color: #f9f9f9;
+}
+
+/* Adiciona espaçamento inferior para evitar proximidade com o footer */
+.products-section {
+  margin-bottom: 80px;
+}
+
+.products-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+/* Container dos cards */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilo dos cards */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .products-section {
+    padding: 30px 10px; /* Reduz o padding em telas menores */
+  }
+
+  .product-card img {
+    height: 120px;
+  }
+
+  .product-info h5 {
+    font-size: 1rem;
+  }
+
+  .product-info p {
+    font-size: 0.8rem;
+  }
+}
